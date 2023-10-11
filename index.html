@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/base.css">
+    <link rel="stylesheet" href="./Assets/css/main.css">
+    <link rel="stylesheet" href="./Assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="icon" href="./Assets/img/logo.webp" type="image/gif" sizes="16x8">
+    <script src="./Assets/js/main.js"></script>
+    <title>Traverlix</title>
+    <!--Start of Fchat.vn--><script type="text/javascript" src="https://cdn.fchat.vn/assets/embed/webchat.js?id=64ad0083a425e31ecc1be092" async="async"></script>
+</head>
+<body>
+    <div class="traverlix">
+        <div class="container">
+            <div class="container_header">
+                <div class="header_contact">
+                    <div class="header_links">
+                        <div class="info">
+                            <p class="phone_number">+84 388 089 507</p>
+                        </div>
+                        <div class="link">
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="header_register">
+                        <ul class="header_topbar--register">
+                            <a href="#" class="header_topbar--login" onclick="ArriveToLogin()">
+                                <li>Login</li>
+                            </a>
+                            <a href="#" class="header_topbar--space">
+                                <li>|</li>
+                            </a>
+                            <a href="#" class="header_topbar--btn_register" onclick="ArriveToRegister()">
+                                <li>register</li>              
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_navbar">
+                <div class="header_navbar--logo">
+                    <a href="" class="navbar_logo">
+                        <p class="logo">traverlix</p>
+                    </a>
+                </div>
+                <div class="header_navbar--items">
+                    <ul class="navbar_items--list">
+                      <li  class="header_navbar--item">
+                        <a href="./index.html" class="navbar_item home_underlined">home</a>
+                      </li>
+                      <li  class="header_navbar--item">
+                        <a href="./about.html" class="navbar_item">about</a>
+                      </li>
+                      <li  class="header_navbar--item">
+                        <a href="./offer.html" class="navbar_item">offers</a>
+                      </li>
+                      <li  class="header_navbar--item">
+                        <a href="./news.html" class="navbar_item">news</a>
+                      </li>
+                      <li  class="header_navbar--item">
+                        <a href="./contact.html" class="navbar_item">contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                <div class="header_navbar--search">
+                    <p href="#" class="navbar_logo">
+                        <i class="fa-solid fa-magnifying-glass" id="search_btn" onclick="HideShowSearch()"></i>
+                        <input type="text" class="navbar_search--input" id="navbar_search--input" placeholder="Search...">
+                    </p>        
+
+                </div>
+                <div class="navbar_icon">
+                    <i class="fa-solid fa-bars navbar_icon--show" onclick="ShowNavbar()"></i>
+                    <div class="navbar_icon--list_div ">
+                        <div class="responsive_navbar--item">
+                            <ul class="navbar_icon--list">
+                                <li  class="navbar_icon--item">
+                                  <a href="./index.html" class="navbar_item home_underlined">home</a>
+                                </li>
+                                <li  class="navbar_icon--item">
+                                  <a href="./about.html" class="navbar_item">about</a>
+                                </li>
+                                <li  class="navbar_icon--item">
+                                  <a href="./offer.html" class="navbar_item">offers</a>
+                                </li>
+                                <li  class="navbar_icon--item">
+                                  <a href="./news.html" class="navbar_item">news</a>
+                                </li>
+                                <li  class="navbar_icon--item">
+                                  <a href="./contact.html" class="navbar_item">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="responsive_icon--close" onclick="HideNavbar()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BEM  == BLOCK ELEMENT MODIFIER -->
+            <!-- CLASS = B_E--M -->
+            <div class="home">
+                <div class="body">
+                    <div class="home_background">
+                        <h1>DISCOVER</h1>
+                        <h1>the world</h1>
+                    </div>
+                    <div class="home_background--btn">
+                        <div class="background_btn--bg"></div>
+                        <a href="#" class="background_btn">Explore now ...</a>
+                    </div>
+                    <div class="option">
+                        <div class="option_list-item">
+                            <img src="./Assets/img/hotel.webp" alt="">
+                            <a href="" class="option_item--link">hotels</a>
+                        </div>
+                        <div class="option_list-item">
+                            <img src="./Assets/img/car.webp" alt="">
+                            <a href="" class="option_item--link">car rentals</a>
+                        </div>
+                        <div class="option_list-item">
+                            <img src="./Assets/img/fly.webp" alt="">
+                            <a href="" class="option_item--link">flights</a>
+                        </div>
+                        <div class="option_list-item">
+                            <img src="./Assets/img/trip.webp" alt="">
+                            <a href="" class="option_item--link">trips</a>
+                        </div>
+                        <div class="option_list-item">
+                            <img src="./Assets/img/cruises.webp" alt="">
+                            <a href="" class="option_item--link">cuises</a>
+                        </div>
+                        <div class="option_list-item">
+                            <img src="./Assets/img/activities.webp" alt="">
+                            <a href="" class="option_item--link">activities</a>
+                        </div>
+                    </div>
+                    <div class="background_search">
+                        <div class="background_search--part1">
+                            <div class="search_item">
+                                <div class="search_item_text">
+                                    <p>DESTINATION</p>
+                                </div>
+                                <input type="text" class="search_item--destination">
+                            </div>
+                            <div class="search_item">
+                                <div class="search_item_text">
+                                    <p>CHECK IN</p>
+                                </div>
+                                <input type="text" placeholder="DD-MM--YYYY" class="search_item--input">
+                            </div>
+                        </div>
+                        <div class="background_search--part2">
+                            <div class="search_item">
+                                <div class="search_item_text">
+                                    <p>CHECK OUT</p>
+                                </div>
+                                <input type="text" class="search_item--input">
+                            </div>
+                            <div class="search_item">
+                                <div class="search_item_text">
+                                    <p>ADULTS</p>
+                                </div>
+                                <select name="adults" class="select_adults">
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="search_item">
+                                <div class="search_item_text">
+                                    <p>CHILDREN</p>
+                                </div>
+                                <select name="children" class="select_children">
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="background_search--part3">
+                            <div class="search_item search_item--btn">
+                                <a href="">search</a>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mày làm -->
+        <div class="tour">
+            <div class="grid wide">
+                <div class="tour__container">
+                    <div class="tour__container__content">
+                        <h2 class="text-title">We have the best tours</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
+                            <br>
+                            Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
+                        </p>
+                    </div>
+                    <div class="container_tour">
+                        <div class="container_tour--list">
+                            <div class="overlay-tour"></div>
+                            <div class="tour_background"></div>
+                            <div class="tour_background-items">
+                                <div class="tour_list--date">
+                                    <p>May 15th - July 01st</p>
+                                </div>
+                                <div class="tour_list--name">
+                                    <h1 class="tour_name">Mauritius</h1>
+                                    <p class="tour_price">From $1450</p>
+                                    <p class="tour_rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                </div>
+                                <div class=" tour_btn">
+                                    <div class=" tour_btn--bg"></div>
+                                    <a href="#" class=" tour_btn--text">SEE MORE</a>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="container_tour--list">
+                            <div class="overlay-tour"></div>
+                            <div class="tour_background tour_background1"></div>
+                            <div class="tour_background-items">
+                                <div class="tour_list--date">
+                                    <p>May 15th - July 01st</p>
+                                </div>
+                                <div class="tour_list--name">
+                                    <h1 class="tour_name">Greece</h1>
+                                    <p class="tour_price">From $1450</p>
+                                    <p class="tour_rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                </div>
+                                <div class=" tour_btn">
+                                    <div class=" tour_btn--bg"></div>
+                                    <a href="#" class=" tour_btn--text">SEE MORE</a>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="container_tour--list">
+                            <div class="overlay-tour"></div>
+                            <div class="tour_background tour_background2"></div>
+                            <div class="tour_background-items">
+                                <div class="tour_list--date">
+                                    <p>May 15th - July 01st</p>
+                                </div>
+                                <div class="tour_list--name">
+                                    <h1 class="tour_name">Scotland</h1>
+                                    <p class="tour_price">From $1450</p>
+                                    <p class="tour_rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                </div>
+                                <div class=" tour_btn">
+                                    <div class=" tour_btn--bg"></div>
+                                    <a href="#" class=" tour_btn--text">SEE MORE</a>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pakage">
+            <div class="item__overlay"></div>
+            <div class="container_pakage">     
+                <div class="pakage_content">
+                    <div class="pakage_content--text">
+                        <div class="pakage_heading pakage_item">
+                            <h2 class="content_heading">MALDIVES DELUXE PACKAGE</h2>
+                        </div>
+                       <div class="pakage_rating pakage_item">
+                            <p class="tour_rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                       </div>
+                       <div class="pakage_text pakage_item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu,<br>
+                            vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</p><br>
+
+                       </div>
+                        
+                    </div>
+                    <div class="pakage_content--bottom">
+                        <div class=" tour_btn">
+                            <div class=" tour_btn--bg"></div>
+                            <a href="#" class=" tour_btn--text">BOOK NOW</a>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offer_room">
+            <div class="container_offer_room">
+                
+            </div>
+        </div>
+        <!-- offer -->
+        <div class="container_offer">
+            <div class="heading_offer">
+                <h2>THE BEST OFFERS WITH ROOMS</h2>
+            </div>
+            <div class="picture_one_offer">
+                <div class="conten_pic">
+                    <img  class="picture_item" src="./Assets/img/pic1.jpg" alt="">
+                    <div class="offer_container--item_name">
+                        <a href="">GRAND CASTLE</a>
+                    </div>
+                </div>
+                <div class="conten_text">
+                    <div class="price_offer">
+                        $70 
+                        <span>per night</span>
+                    </div>
+                    <div class="offer_rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="desciption_offer">
+                        <p>Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+                    </div>
+                    <div class="icon">
+                        
+                        <img src="./Assets/img/icon1.webp" alt="">
+                        <img src="./Assets/img/icon2.webp" alt="">
+                        <img src="./Assets/img/icon3.webp" alt="">
+                        <img src="./Assets/img/icon4.webp" alt="">
+                    </div>
+                    <div class="conten_text--more_infor">
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="picture_two_offer">
+                <div class="conten_pic">
+                    <img  class="picture_item" src="./Assets/img/pic2.jpg" alt="">
+                    <div class="offer_container--item_name">
+                        <a href="">TURKEY HILLS</a>
+                    </div>
+                </div>
+                <div class="conten_text">
+                    <div class="item price_offer">
+                        $50 
+                        <span>per night</span>
+                    </div>
+                    <div class=" offer_rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class=" desciption_offer">
+                        <p>Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+                    </div>
+                    <div class=" icon">
+                        
+                        <img src="./Assets/img/icon1.webp" alt="">
+                        <img src="./Assets/img/icon2.webp" alt="">
+                        <img src="./Assets/img/icon3.webp" alt="">
+                        <img src="./Assets/img/icon4.webp" alt="">
+                    </div>
+                    <div class=" conten_text--more_infor">
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="picture_three_offer ">
+                <div class="conten_pic">
+                    <img  class="picture_item" src="./Assets/img/pic3.jpg" alt="">
+                    <div class="offer_container--item_name">
+                        <a href="">ISLAND DREAM</a>
+                    </div>
+                </div>
+                <div class="conten_text">
+                    <div class="item price_offer">
+                        $70 
+                        <span>per night</span>
+                    </div>
+                    <div class="offer_rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="item desciption_offer">
+                        <p>Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+                    </div>
+                    <div class="item icon">
+                        
+                        <img src="./Assets/img/icon1.webp" alt="">
+                        <img src="./Assets/img/icon2.webp" alt="">
+                        <img src="./Assets/img/icon3.webp" alt="">
+                        <img src="./Assets/img/icon4.webp" alt="">
+                    </div>
+                    <div class=" conten_text--more_infor">
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="picture_four_offer ">
+                <div class="conten_pic">
+                    <img  class="picture_item" src="./Assets/img/pic4.jpg" alt="">
+                    <div class="offer_container--item_name">
+                        <a href="">TRAVEL LIGHT</a>
+                    </div>
+                </div>
+                <div class="conten_text">
+                    <div class="item price_offer">
+                        $70 
+                        <span>per night</span>
+                    </div>
+                    <div class= "offer_rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class=" desciption_offer">
+                        <p>Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+                    </div>
+                    <div class="icon">
+                        
+                        <img src="./Assets/img/icon1.webp" alt="">
+                        <img src="./Assets/img/icon2.webp" alt="">
+                        <img src="./Assets/img/icon3.webp" alt="">
+                        <img src="./Assets/img/icon4.webp" alt="">
+                    </div>
+                    <div class=" conten_text--more_infor">
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- testimonials -->
+        <div class="testimonials">
+            <div class="testimonials_border"></div>
+            <div class="testimonials_container">
+                <div class="testimonials_container--heading">
+                    <div class="testimonials_heading_container">
+                        <h2> WHAT OUR CLIENTS SAY ABOUT US</h2>
+                    </div>
+                </div>
+                <div class="testimonials_container--items">
+                    <div class="testimonials_item">
+                        <div class="testimonials_item--css"></div>
+                        <div class="testimonials__item--pic">
+                            <img src="./Assets/img/pic1_testimonials.jpg" alt="">
+                        </div>
+                        <div class="testimonials_item--icon">
+                            <img src="./Assets/img/icon1_testimonials.jpg" alt="">
+                        </div>
+                        <div class="testimonials_item_container--infor">
+                            <h3>CARLA SMITH</h3>
+                            <span>May 24, 2020</span>
+                        </div>
+                        <div class="testimonials_item_container--countant">
+                            <span>" Best holliday ever "</span>
+                            <p>Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+                        </div>
+                    </div>
+                    <div class="testimonials_item">
+                        <div class="testimonials_item--css"></div>
+                        
+                        <div class="testimonials__item--pic">
+                            <img src="./Assets/img/pic2_testimonials.jpg" alt="">
+                        </div>
+                        <div class="testimonials_item--icon">
+                            <img src="./Assets/img/icon2_testimonials.jpg" alt="">
+                        </div>
+                        <div class="testimonials_item_container--infor">
+                            <h3>CARLA SMITH</h3>
+                            <span>May 24, 2020</span>
+                        </div>
+                        <div class="testimonials_item_container--countant">
+                            <span>" Best holliday ever "</span>
+                            <p>Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+                        </div>
+                    </div>
+                    <div class="testimonials_item">
+                        <div class="testimonials_item--css"></div>     
+                        <div class="testimonials__item--pic">
+                            <img src="./Assets/img/pic4_testimonials .jpg" alt="">
+                        </div>
+                        <div class="testimonials_item--icon">
+                            <img src="./Assets/img/icon3_testimonials.jpg" alt="">
+                        </div>
+                        <div class="testimonials_item_container--infor">
+                            <h3>CARLA SMITH</h3>
+                            <span>May 24, 2020</span>
+                        </div>
+                        <div class="testimonials_item_container--countant">
+                            <span>" Best holliday ever "</span>
+                            <p>Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Trending -->
+        <div class="trending">
+            <div class="trending_container">
+                <div class="trending_container--header">
+                    <h2>TRENDING NOW</h2>
+                </div>
+                <div class="trending_container--line">
+                    <div class="trending_line_one--item">
+                        <div class="trending_item--pic1">
+                            <img src="./Assets/img/trending_pic1.jpg" alt="">
+                        </div>
+                        <div class="trending_item--content">
+                            <div class="trending_content--heading">
+                                <a href="">GRAND HOTEL</a>
+                            </div>
+                            <div class="trending_content--price">
+                                <span>Form $182</span>
+                            </div>
+                            <div class="trending_content--country">
+                                <span>MADRID, SPAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending_line_one--item">
+                        <div class="trending_item--pic2">
+                            <img src="./Assets/img/trending_pic2.jpg" alt="">
+                        </div>
+                        <div class="trending_item--content">
+                            <div class="trending_content--heading">
+                                <a href="">MARS HOTEL</a>
+                            </div>
+                            <div class="trending_content--price">
+                                <span>Form $182</span>
+                            </div>
+                            <div class="trending_content--country">
+                                <span>MADRID, SPAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending_line_one--item">
+                        <div class="trending_item--pic3">
+                            <img src="./Assets/img/trending_pic3.jpg" alt="">
+                        </div>
+                        <div class="trending_item--content">
+                            <div class="trending_content--heading">
+                                <a href="">QUEEN HOTEL</a>
+                            </div>
+                            <div class="trending_content--price">
+                                <span>Form $182</span>
+                            </div>
+                            <div class="trending_content--country">
+                                <span>MADRID, SPAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending_line_one--item">
+                        <div class="trending_item--pic4">
+                            <img src="./Assets/img/trending_pic4.jpg" alt="">
+                        </div>
+                        <div class="trending_item--content">
+                            <div class="trending_content--heading">
+                                <a href="">MARS HOTEL</a>
+                            </div>
+                            <div class="trending_content--price">
+                                <span>Form $182</span>
+                            </div>
+                            <div class="trending_content--country">
+                                <span>MADRID, SPAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending_container--line">
+                    <div class="trending_line_one--item">
+                        <div class="trending_item--pic1">
+                            <img src="./Assets/img/trending_pic5.jpg" alt="">
+                        </div>
+                        <div class="trending_item--content">
+                            <div class="trending_content--heading">
+                                <a href="">GRAND HOTEL</a>
+                            </div>
+                            <div class="trending_content--price">
+                                <span>Form $182</span>
+                            </div>
+                            <div class="trending_content--country">
+                                <span>MADRID, SPAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending_line_one--item">
+                        <div class="trending_item--pic2">
+                            <img src="./Assets/img/trending_pic6.jpg" alt="">
+                        </div>
+                        <div class="trending_item--content">
+                            <div class="trending_content--heading">
+                                <a href="">MARS HOTEL</a>
+                            </div>
+                            <div class="trending_content--price">
+                                <span>Form $182</span>
+                            </div>
+                            <div class="trending_content--country">
+                                <span>MADRID, SPAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending_line_one--item">
+                        <div class="trending_item--pic3">
+                            <img src="./Assets/img/trending_pic7.jpg" alt="">
+                        </div>
+                        <div class="trending_item--content">
+                            <div class="trending_content--heading">
+                                <a href="">QUEEN HOTEL</a>
+                            </div>
+                            <div class="trending_content--price">
+                                <span>Form $182</span>
+                            </div>
+                            <div class="trending_content--country">
+                                <span>MADRID, SPAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending_line_one--item">
+                        <div class="trending_item--pic4">
+                            <img src="./Assets/img/trending_pic8.jpg" alt="">
+                        </div>
+                        <div class="trending_item--content">
+                            <div class="trending_content--heading">
+                                <a href="">MARS HOTEL</a>
+                            </div>
+                            <div class="trending_content--price">
+                                <span>Form $182</span>
+                            </div>
+                            <div class="trending_content--country">
+                                <span>MADRID, SPAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="contact">
+            <div class="contact_container">
+                <div class="contact_container--background">
+                    <div class="contact_container--form">
+                        <div class="contact_form--heading">
+                            <h2>GET IN TOUCH</h2>
+                        </div>
+                        <div class="contact_form--infor">
+                            <div class="contact_infor--name_email">
+                                <input type="text" placeholder="Name" class="contact_name_input">
+                                <input type="email" required placeholder="Email" class="contact_email_input">
+                            </div>
+                            <div class="contact_infor--subject">
+                                <input type="text" placeholder="Subject" class="contact_subject_input">
+                            </div>
+                            <div class="contat_infor--message">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact_textare_input"></textarea>
+                            </div>
+                            <div class="contact_infor--button">
+                                <button class="contact_button_submit">Send Message
+                                <span></span><span></span><span></span>
+                                </button>
+                            </div>                                                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container_footer">
+                <div class="container_footer--info">
+                    <a href="" class="container_footer--title">
+                        <h1 class="footer_info--title">
+                            <img src="./Assets/img/logo.webp" alt="">
+                            traverlix
+                        </h1>
+                    </a>
+                    <p class="footer_info--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, 
+                        iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.
+                    </p>
+                    <ul class="footer_info--link">
+                        <li class="footer_info--link_items">
+                            <a href="">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li class="footer_info--link_items">
+                            <a href="">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer_info--link_items">
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer_info--link_items">
+                            <a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_blog">
+                    <h1 class="footer_blog--title">BLOG POSTS</h1>
+                    <div class="footer_blog--items">
+                        <div class="footer_blog--items_img">
+                            <img src="./Assets/img/xfooter_blog_1.jpg.pagespeed.ic.n5JT1wzbm-.webp" alt="">
+                        </div>
+                        <div class="footer_blog--items_info">
+                            <a href="">
+                                <p>Travel with us this year</p>
+                            </a>
+                            <p class="footer_blog--date">July 20, 2021</p>
+                        </div>
+                    </div>
+                    <div class="footer_blog--items">
+                        <div class="footer_blog--items_img">
+                            <img src="./Assets/img/xfooter_blog_2.jpg.pagespeed.ic.u_Bp7zMu38.webp" alt="">
+                        </div>
+                        <div class="footer_blog--items_info">
+                            <a href="">
+                                <p>New destinations for you</p>
+                            </a>
+                            <p class="footer_blog--date">July 20, 2021</p>
+                        </div>
+                    </div>
+                    <div class="footer_blog--items">
+                        <div class="footer_blog--items_img">
+                            <img src="./Assets/img/xfooter_blog_3.jpg.pagespeed.ic.XDkX_CloU3.webp" alt="">
+                        </div>
+                        <div class="footer_blog--items_info">
+                            <a href="">
+                                <p>Travel with us this year</p>
+                            </a>
+                            <p class="footer_blog--date">July 20, 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_tag">
+                    <h1 class="footer_tag--title">tags</h1>
+                    <div class="footer_tag--content">
+                        <ul class="tag_content-lits">
+                            <li class="tag_content--item">
+                                <a href="">design</a>
+                            </li>
+                            <li class="tag_content--item">
+                                <a href="">fashion</a>
+                            </li>
+                            <li class="tag_content--item">
+                                <a href="">music</a>
+                            </li>
+                            <li class="tag_content--item">
+                                <a href="">video</a>
+                            </li>
+                            <li class="tag_content--item">
+                                <a href="">party</a>
+                            </li>
+                            <li class="tag_content--item">
+                                <a href="">photography</a>
+                            </li>
+                            <li class="tag_content--item">
+                                <a href="">adventure</a>
+                            </li>
+                            <li class="tag_content--item">
+                                <a href="">travel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer_contact">
+                    <h1 class="footer_contact--title">contact info</h1>
+                    <div class="footer_contact--content">
+                        <a href="" class="footer_contact--items">
+                            <p>Yên Bệ, Hoài Đức, Hà Nội</p>
+                        </a>
+                        <a href="" class="footer_contact--items">
+                            <p>+84 869819316</p>
+                        </a>
+                        <a href="" class="footer_contact--items">
+                            <p>Leanhminh0203@gmail.com</p>
+                        </a>
+                        <a href="" class="footer_contact--items">
+                            <p>nguyenvanhieu203.github.io/Traverlix</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="coppyright">
+                Copyright © 2021 By
+                <a href="https://www.facebook.com/profile.php?id=100029200125883">Nguyễn Văn Hiếu & Lê Anh Minh</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
